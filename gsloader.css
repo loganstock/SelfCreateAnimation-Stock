@@ -1,0 +1,14 @@
+/* CSS */
+
+.spin {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 10px solid #CCCCCC;
+  border-top-color: #555555;
+}
+
+.body {
+  font-size: 24pt;
+  color: #CCCCCC;
+}

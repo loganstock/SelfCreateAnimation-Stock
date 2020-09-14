@@ -1,0 +1,15 @@
+/* CSS */
+
+.synthwave {
+  color: #CCCCCC;
+  background-color: #7700FF;
+  border-color: #00DDFF;
+  padding: 10px;
+  margin: 10px;
+}
+
+.text {
+  font-size: 24pt;
+  color: #CCCCCC;
+  opacity: 0;
+}

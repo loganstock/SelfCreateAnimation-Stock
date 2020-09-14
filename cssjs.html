@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Self Create - Stock - CSS and Javascript</title>
+<link rel="stylesheet" href="selfCreate.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<style>
+  .ball1 {
+    height: 150px;
+    width: 150px;
+    background-color: #FF0000;
+    border-radius: 50%;
+  }
+
+  .ball2 {
+    height: 100px;
+    width: 100px;
+    background-color: #00FF00;
+    border-radius: 50%;
+  }
+
+  .ball3 {
+    height: 50px;
+    width: 50px;
+    background-color: #0000FF;
+    border-radius: 50%;
+  }
+
+  .ball4 {
+    height: 200px;
+    width: 200px;
+    background-color: #FF00FF;
+    border-radius: 50%;
+  }
+
+  #one {
+    animation-name: fall5;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
+
+  #two {
+    animation-name: fall1;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
+
+  #three {
+    animation-name: fall1;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
+
+  #four {
+    animation-name: fall3;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
+
+  #five {
+    animation-name: fall4;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
+
+  #six {
+    animation-name: fall2;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
+
+  #seven {
+    animation-name: fall2;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
+
+  #eight {
+    animation-name: fall1;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
+
+  #nine {
+    animation-name: fall5;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
+
+  #ten {
+    animation-name: fall1;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
+
+  #eleven {
+    animation-name: fall3;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
+
+  #twelve {
+    animation-name: fall4;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
+
+  @keyframes fall1 {
+    from {transform: translate(-1000px, -750px)};
+    to {transform: translate(750px, 1000px)};
+  }
+
+  @keyframes fall2 {
+    from {transform: translate(-500px, -1000px)};
+    to {transform: translate(1000px, 500px)};
+}
+
+  @keyframes fall3 {
+    from {transform: translate(-1000px, -1000px)};
+    to {transform: translate(1000px, 700px)};
+  }
+
+  @keyframes fall4 {
+    from {transform: translate(-750px, -750px)};
+    to {transform: translate(1000px, 750px)};
+  }
+
+  @keyframes fall5 {
+    from {transform: translate(-1000px, -750px)};
+    to {transform: translate(1000px, 750px)};
+  }
+</style>
+<script src="load.js"></script>
+</head>
+
+<body class="body" onload=onload()>
+  <button id="start" onclick=play()>Play</button>
+  <div class="ball1" id="one"></div>
+  <div class="ball2" id="two"></div>
+  <div class="ball3" id="three"></div>
+  <div class="ball4" id="four"></div>
+  <div class="ball2" id="five"></div>
+  <div class="ball3" id="six"></div>
+  <div class="ball4" id="seven"></div>
+  <div class="ball1" id="eight"></div>
+  <div class="ball3" id="nine"></div>
+  <div class="ball1" id="ten"></div>
+  <div class="ball2" id="eleven"></div>
+  <div class="ball4" id="twelve"></div>
+
+  <script>
+    function play() {
+      document.getElementById('one').style.animationPlayState = "running";
+      document.getElementById('two').style.animationPlayState = "running";
+      document.getElementById('three').style.animationPlayState = "running";
+      document.getElementById('four').style.animationPlayState = "running";
+      document.getElementById('five').style.animationPlayState = "running";
+      document.getElementById('six').style.animationPlayState = "running";
+      document.getElementById('seven').style.animationPlayState = "running";
+      document.getElementById('eight').style.animationPlayState = "running";
+      document.getElementById('nine').style.animationPlayState = "running";
+      document.getElementById('ten').style.animationPlayState = "running";
+      document.getElementById('eleven').style.animationPlayState = "running";
+      document.getElementById('twelve').style.animationPlayState = "running";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+/* CSS Animation */
+
+body {
+  color: #FFFFFF;
+  animation: fadeIn 1s ease-in forwards
+}
+
+.one {
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+  background-color: #FF0000;
+}
+
+.two {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 20px;
+  background-color: #FFFF00;
+}
+
+.three {
+  height: 100px;
+  width: 50px;
+  margin: 20px;
+  background-color: #00FF00;
+}
+
+.four {
+  height: 50px;
+  width: 100px;
+  margin: 20px;
+  background-color: #00FFFF;
+} 
+
+.five {
+  height: 50px;
+  width: 50px;
+  margin: 20px;
+  border-radius: 50%;
+  background-color: #0000FF
+}
+
+.one:hover {
+  animation: one 1s ease-out infinite
+}
+
+.two:hover {
+  animation: two 1s ease infinite
+}
+
+.three:hover {
+  animation: three 1s ease-in infinite
+}
+
+.four:hover {
+  animation: four 1s ease-in-out infinite
+}
+
+.five:hover {
+  animation: five 1s linear infinite
+}
+
+@keyframes one {
+  50% {transform: scale(2)};
+  100% {transform: scale(1)};
+}
+
+@keyframes two {
+  50% {transform: translateY(25px)};
+}
+
+@keyframes three {
+  to {transform: rotate(360deg)};
+}
+
+@keyframes four {
+  50% {transform: scale(0.5)};
+  100% {transform: scale(1)};
+}
+
+@keyframes five {
+  50% {transform: translateX(25px)};
+}
+
+@keyframes fadeIn {
+  from {opacity: 0};
+}

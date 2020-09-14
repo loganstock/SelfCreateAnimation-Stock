@@ -1,0 +1,9 @@
+/* CSS */
+
+.pow {
+  animation: pow 1s ease forwards;
+}
+
+@keyframes pow {
+  from {transform: scale(0)};
+}

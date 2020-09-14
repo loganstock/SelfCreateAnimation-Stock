@@ -1,0 +1,109 @@
+/* CSS */
+
+#menuContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: -40px;
+}
+
+.menuLink {
+  text-decoration: none;
+  font-size: 16pt;
+  color: #CCCCCC;
+  padding: 10px;
+  margin: 10px;
+}
+
+.header {
+  font-size: 36pt;
+  color: #CCCCCC;
+  padding: 10px;
+  margin: 10px;
+}
+
+.bodyContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 10px;
+}
+
+.item {
+  font-size: 18pt;
+  color: #CCCCCC;
+  padding: 10px;
+  margin: 10px;
+  border: 3px solid #CCCCCC;
+}
+
+.item:hover {
+  animation: combo 1s ease forwards
+}
+
+#one:hover {
+  animation: red 1s ease forwards
+}
+
+#two:hover {
+  animation: blue 1s ease forwards
+}
+
+#three:hover {
+  animation: green 1s ease forwards
+}
+
+#four:hover {
+  animation: yellow 1s ease forwards
+}
+
+#five:hover {
+  animation: purple 1s ease forwards
+}
+
+.burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20pt;
+  color: #CCCCCC;
+  padding: 10px;
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.burger:hover {
+  animation: inverse 1s ease forwards
+}
+
+@keyframes red {
+  to {color: #FF0000}
+}
+
+@keyframes green {
+  to {color: #00FF00}
+}
+
+@keyframes blue {
+  to {color: #0000FF}
+}
+
+@keyframes yellow {
+ to {color: #FFFF00}
+}
+
+@keyframes purple {
+  to {color: #FF00FF}
+}
+
+@keyframes inverse {
+  to {background-color: #CCCCCC; color: #282B30}
+}
+
+@keyframes combo {
+  to {background-color: #CCCCCC; color: #282B30; transform: scale(1.5); border-color: #282B30}
+}
